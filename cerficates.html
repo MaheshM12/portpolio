@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(197, 245, 229);
+        }
+        .cert {
+            display: flex;
+           flex-direction: column;
+           gap: 10px;
+            flex-wrap: wrap;
+            margin: 1%;
+            padding: 1%;
+            justify-content: space-between;
+           
+        }
+        .cert img{
+            background-color:gray;
+            padding: 10px;
+            margin: 10px;
+            height: 150px;
+            width: 150px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Certificates:</h1><h2>(over the mouse to see full size)</h2>
+    <div class="cert">
+        <img class="img1" src="./resources/Ceri/html.jpg" alt="html certificate">
+        <img class="img1" src="./resources/Ceri/css.jpg" alt="css certificate">
+        <img class="img1" src="./resources/Ceri/JavaScript.jpg" alt="Javascript certificate">
+        <img class="img1" src="./resources/Ceri/github.jpg" alt="git certificate">
+        <img class="img1" src="./resources/Ceri/Bootstrap.jpg" alt="bootstrap certificate">
+        <img class="img1" src="./resources/Ceri/command line.jpg" alt="command line certificate">
+        
+    </div>
+    <script>
+
+        let ab=document.getElementsByClassName('img1');
+        for(let i=0;i<ab.length;i++){
+            ab[i].addEventListener('mouseover',function on(){
+            ab[i].style.width='70%';
+            ab[i].style.height='70%';
+        });
+        };
+       
+        let abc=document.getElementsByClassName('img1');
+        for(let i=0;i<abc.length;i++){
+            abc[i].addEventListener('mouseout',function out(){
+            abc[i].style.width='150px';
+            abc[i].style.height='150px';
+        });
+        }
+    </script>
+</body>
+</html>

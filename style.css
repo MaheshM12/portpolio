@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(201, 248, 232);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+.navbar{
+    background-color: rgb(133, 252, 212);
+    margin: 0;
+    padding: 0;
+   height: 140px;
+   align-items: center;
+   align-content: center;
+   padding-top: 10px;
+}
+nav .left h2{
+    font-weight: bolder;
+    font-size: 30px;
+}
+nav .left{
+    align-items: center;
+    display: flex;
+    float:left ;
+    padding-left: 50px;
+   
+}
+nav .right{
+    display: flex;
+    float: right;
+    
+}
+.right ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+.right ul img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+.right ul a{
+    text-decoration: none;
+}
+.right ul a li {
+    font-size: 20px;
+    padding:10px 20px;
+   
+}
+h1{
+    padding-left: 30px;
+}
+main{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+}
+.info-left {
+   
+        align-content: flex-start;
+        width: 50%;
+}
+.info-right img{
+    align-content: flex-start;
+       width: 50%;
+       height: 80%;
+       margin: 2% 2%;
+       float: right;
+}
+.info-left p{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.info-left span{
+    color:rgb(240, 158, 158);
+}
+@media  screen and (max-width:800px) {
+    .right ul{
+        display: none;
+    }
+}
+.right ul a li{
+    color:black;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.skills h4{
+    font-size: 20px;
+    font-size: larger;
+    font-weight: bold;
+
+}
+.languages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+   background-color: rgb(61, 104, 104);
+}
+.languages img{
+    height: 100px;
+    width: 100px;
+    margin: 1%;
+    padding: 1%;
+    background-color: rgb(216, 226, 223);
+}
+.media{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.media img{
+    height: 50px;
+    width: 50px;
+    margin: 5%;
+    padding: 20px;
+    background-color: rgb(216, 226, 223);
+}
